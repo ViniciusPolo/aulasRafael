@@ -32,4 +32,15 @@ class Usuario
             ":email" => $email
         ]);
     }
+
+    public function deletar($id)
+    {
+        $sql = "DELETE FROM usuarios WHERE id = :id";
+
+        $stmt = $this->conn->prepare($sql);
+
+        return $stmt->execute([
+            ":id" => $id
+        ]);
+    }
 }

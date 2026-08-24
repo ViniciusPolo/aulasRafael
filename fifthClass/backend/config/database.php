@@ -4,9 +4,9 @@ class Database
 {
     private $host = "localhost";
     private $port = "5432";
-    private $dbname = "sistema";
+    private $dbname = "postgres";
     private $user = "postgres";
-    private $password = "senha";
+    private $password = "password";
 
     public function conectar()
     {
